@@ -1,0 +1,21 @@
+body {
+    background-color: skyblue;
+}
+
+.app {
+    grid: repeat(5, 1fr) / 50% 50%;
+    grid-row-gap: 2em;
+    height: 800px;
+    max-height: 1500px;
+    max-width: 1500px;
+    grid-template-areas:
+}
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}

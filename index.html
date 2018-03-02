@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/accounting.js/0.3.2/accounting.js"></script>
+    <script src="/cp3/js/script.js"></script>
+    
+    <link rel="stylesheet" href="/cp3/style.css">
+    <title>Simple Game</title>
+  </head>
+  <body>
+
+    <div id="app" class="app">
+      <form>
+	<input type="radio" v-model="animal" : value="animals[i]">
+	{{animals[i]}} <br>
+
+	<input type="radio" v-model="animal" : value="animals[i+1]">
+	{{animals[i+1]}} <br>
+
+	<br>
+	<input v-on:click="updateFarm" class="button" type="submit" value="Add Animal"></input>
+      </form>
+      <br>
+      <div>
+	You choose animals: {{farm.join(" ")}}
+      </div>
+    </div>
+    
+    <div class="footer">
+      My GitHub: <a href="https://github.com/yukisatop/creativeproject3">Yuki Sato's GitHub</a>
+    </div>
+
+    </body>
+</html>
+
+  
